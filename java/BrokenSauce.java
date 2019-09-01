@@ -35,7 +35,7 @@ public class BrokenSauce {
     WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-    driver.get("www.google.com/");
+    driver.get("https://www.google.com/");
     WebElement search = driver.findElement(By.name("Search"));
 
     search.sendKeys("Sauce Labs");

@@ -31,7 +31,7 @@ public class WorkingSauce {
     DesiredCapabilities caps = DesiredCapabilities.chrome();
     caps.setCapability("platform", "Windows 7");
     caps.setCapability("browserName", "chrome");
-    caps.setCapability("version", "48");
+    caps.setCapability("version", "latest");
     caps.setCapability("name", "Guinea-Pig Sauce");
 
     WebDriver driver = new RemoteWebDriver(new URL(URL), caps);

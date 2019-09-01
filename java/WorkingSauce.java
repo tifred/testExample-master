@@ -10,7 +10,7 @@ public class WorkingSauce {
 
   public static final String USERNAME = System.getenv("SAUCE_USERNAME");
   public static final String ACCESS_KEY = System.getenv("SAUCE_ACCESS_KEY");
-  public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
+  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com/wd/hub";
 
   public static void main(String[] args) throws Exception {
 
